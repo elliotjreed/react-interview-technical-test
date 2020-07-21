@@ -1,0 +1,73 @@
+.yellow-poster-container {
+  height: 0;
+  overflow: hidden;
+  padding-top: 680px / 661px * 100%;
+  background: white;
+  position: relative;
+
+  .yellow-poster {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    background: linear-gradient(#fff500, #fff500),
+      repeating-linear-gradient(
+        -55deg,
+        #0ba03a,
+        #0ba03a 40px,
+        #fff500 0,
+        #fff500 80px
+      );
+    padding: 20px 20px;
+
+    @include from($tablet - 200) {
+      padding: 30px 30px;
+    }
+
+    background-origin: content-box, padding-box;
+    background-clip: content-box, padding-box;
+
+    figure {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      p {
+        margin-right: 30px;
+        margin-left: 30px;
+        max-width: 100%;
+        white-space: initial;
+        word-wrap: break-word;
+        font-family: Arial, sans-serif;
+        font-size: 6vmin;
+        font-weight: bolder;
+        text-transform: uppercase;
+
+        @include until($desktop) {
+          font-size: 5vmin;
+        }
+
+        @include until($tablet) {
+          font-size: 8vmin;
+        }
+
+        @include from($widescreen) {
+          font-size: 9vmin;
+        }
+      }
+
+      .arrow-down {
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-top: 40px solid #0ba03a;
+      }
+    }
+  }
+}

@@ -33,7 +33,7 @@ export const App = () => {
                   tests it does not work.
                 </p>
 
-                <p>The app show work by:</p>
+                <p>The app should work in the following way:</p>
                 <ol>
                   <li>The user inputs a phrase into the input box</li>
                   <li>
@@ -44,20 +44,22 @@ export const App = () => {
                   <li>
                     The phrase should not be case-sensitive, and the input
                     should be converted to uppercase when being shown in the
-                    yellow poster box
+                    yellow poster box template
                   </li>
                   <li>
-                    If the input box only contains a space or spaces the input
-                    box should have a red border and the poster template should
-                    be empty
+                    If the input box is empty or contains only spaces, the input
+                    box should have a red border and the yellow poster box
+                    template should be empty
                   </li>
                   <li>
-                    If the phrase contains other characters the input box should
-                    have a red border and the poster template should be empty
+                    If the phrase contains characters other than A, E, L, R, S,
+                    T, Y, or a space, the input box should have a red border and
+                    the yellow poster box template should be empty
                   </li>
                   <li>
                     If the phrase entered is the phrase "stay alert" (not case
-                    sensitive) the input box border should be red.
+                    sensitive) the input box border should be red and the yellow
+                    poster box template should be empty.
                   </li>
                 </ol>
               </div>

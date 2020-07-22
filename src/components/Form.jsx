@@ -24,7 +24,7 @@ export const Form = () => {
             <input
               className={
                 "input is-medium" +
-                (isValidPhrase ? " is-success" : " is-danger")
+                (isValidPhrase ? " is-danger" : " is-success")
               }
               placeholder="Potential slogan"
               onChange={handleInput}
